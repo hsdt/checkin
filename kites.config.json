@@ -9,10 +9,10 @@
   "extensions": null,
   "db": {
     "connection": "mongodb-memory",
-    "dbName": "roomrtc",
+    "dbName": "dbcheckin",
     "dataSource": [{
-        "name": "memory",
-        "driver": "memory",
+        "name": "mongodb",
+        "uri": "mongodb://127.0.0.1:27071/dbcheckin",
         "active": true
       },
       {
@@ -32,7 +32,7 @@
       "ext": "ejs",
       "engine": "ejs",
       "renderer": "renderFile",
-      "path": "content/views"
+      "path": "views"
     }
   }
 }

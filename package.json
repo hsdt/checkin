@@ -28,6 +28,7 @@
     "@types/chai": "^4.2.0",
     "@types/chai-as-promised": "^7.1.2",
     "@types/mocha": "^5.2.7",
+    "@types/mongoose": "^5.5.18",
     "axios": "^0.19.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
