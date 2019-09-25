@@ -1,0 +1,8 @@
+--require ts-node/register
+--require node_modules/reflect-metadata/Reflect
+--require app.ts
+--reporter spec
+--retries 3
+--delay
+--exit
+test/**/*.spec.ts

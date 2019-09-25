@@ -1,0 +1,53 @@
+{
+  "name": "checkin-server",
+  "version": "2.0.0-beta.0",
+  "description": "HSDT Checkin Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "ts-node-dev --respawn --transpileOnly ./app.ts",
+    "start:prod": "node dist/app.js",
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitesjs/typescript-starter.git"
+  },
+  "keywords": [
+    "kitesjs",
+    "starter"
+  ],
+  "author": "vunb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kitesjs/typescript-starter/issues"
+  },
+  "homepage": "https://github.com/kitesjs/typescript-starter#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.0",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^5.2.7",
+    "axios": "^0.19.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.0",
+    "mongodb-memory-server": "^5.2.5",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@hasezoey/typegoose": "^5.9.2",
+    "@kites/common": "^1.1.8",
+    "@kites/core": "^1.1.8",
+    "@kites/express": "^1.1.8",
+    "@kites/rest": "^1.1.8",
+    "@types/node": "^12.7.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.1",
+    "multer": "^1.4.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.2"
+  }
+}

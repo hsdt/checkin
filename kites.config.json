@@ -1,0 +1,38 @@
+{
+  "extensionsLocationCache": true,
+  "logger": {
+    "console": {
+      "transport": "console",
+      "level": "info"
+    }
+  },
+  "extensions": null,
+  "db": {
+    "connection": "mongodb-memory",
+    "dbName": "roomrtc",
+    "dataSource": [{
+        "name": "memory",
+        "driver": "memory",
+        "active": true
+      },
+      {
+        "name": "mongodb-memory",
+        "driver": "mongodb-memory-server",
+        "port": "27071",
+        "version": "4.0.3",
+        "active": true
+      }
+    ]
+  },
+  "express": {
+    "static": "./public",
+    "httpPort": 3000,
+    "poweredBy": "HSDT",
+    "views": {
+      "ext": "ejs",
+      "engine": "ejs",
+      "renderer": "renderFile",
+      "path": "content/views"
+    }
+  }
+}
