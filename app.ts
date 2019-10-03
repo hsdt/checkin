@@ -1,7 +1,7 @@
 import { KitesFactory, KitesInstance } from '@kites/core';
 import mongoose from 'mongoose';
 
-import { UserService, User, TodoService } from './api';
+import { UserService, User, TodoService, DMBangMaService, UtilService } from './api';
 import { GetDbConnection, AppRoutes } from './extensions';
 
 async function bootstrap() {
@@ -12,6 +12,8 @@ async function bootstrap() {
       providers: [
         TodoService,
         UserService,
+        UtilService,
+        DMBangMaService,
       ],
     })
     .use(AppRoutes)
@@ -22,7 +24,11 @@ async function bootstrap() {
         return;
       }
 
-      mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+      mongoose.connect(uri, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+      });
       kites.logger.info('Mongodb connect ok: ' + uri);
 
       if (kites.options.env === 'development') {
