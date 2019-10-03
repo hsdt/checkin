@@ -1,7 +1,7 @@
 import { KitesFactory, KitesInstance } from '@kites/core';
 import mongoose from 'mongoose';
 
-import { UserService, User, TodoService, DMBangMaService, UtilService } from './api';
+import { UserService, User, TodoService, DMBangMaService, UtilService, CMLoaiTuDienService, CMTuDienService } from './api';
 import { GetDbConnection, AppRoutes } from './extensions';
 
 async function bootstrap() {
@@ -13,6 +13,8 @@ async function bootstrap() {
         TodoService,
         UserService,
         UtilService,
+        CMLoaiTuDienService,
+        CMTuDienService,
         DMBangMaService,
       ],
     })
