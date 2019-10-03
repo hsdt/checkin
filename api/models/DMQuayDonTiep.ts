@@ -1,6 +1,6 @@
 import { prop, Typegoose } from '@hasezoey/typegoose';
 
-class CMTuDien extends Typegoose {
+class DMQuayDonTiep extends Typegoose {
   @prop({
     required: true,
   })
@@ -11,15 +11,16 @@ class CMTuDien extends Typegoose {
   })
   ma!: string;
 
+  @prop()
+  ten!: string;
+
+  @prop()
+  ghiChu?: string;
+
   @prop({
     required: true,
   })
-  ten!: string;
-
-  @prop({
-    default: '',
-  })
-  ghiChu?: string;
+  idKhuVuc?: string;
 
   @prop({
     default: 0,
@@ -30,16 +31,12 @@ class CMTuDien extends Typegoose {
     default: true,
   })
   active!: boolean;
-
-  @prop()
-  idLoaiTuDien!: string;
 }
 
 /**
  * Model definition
  */
-const CMTuDienModel = new CMTuDien().getModelForClass(CMTuDien, {
-
+const DMQuayDonTiepModel = new DMQuayDonTiep().getModelForClass(DMQuayDonTiep, {
   schemaOptions: {
     timestamps: true,
     toJSON: {
@@ -52,6 +49,6 @@ const CMTuDienModel = new CMTuDien().getModelForClass(CMTuDien, {
 });
 
 export {
-  CMTuDien,
-  CMTuDienModel,
+  DMQuayDonTiep,
+  DMQuayDonTiepModel,
 };
