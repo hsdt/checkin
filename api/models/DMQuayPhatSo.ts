@@ -1,4 +1,5 @@
-import { prop, Typegoose } from '@hasezoey/typegoose';
+import { prop, Typegoose, Ref } from '@hasezoey/typegoose';
+import { CMTuDien } from './CMTuDien';
 
 /**
  * DM Quầy phát số
@@ -26,8 +27,9 @@ class DMQuayPhatSo extends Typegoose {
 
   @prop({
     required: true,
+    ref: CMTuDien,
   })
-  idKhuVuc?: string;
+  khuVuc?: Ref<CMTuDien>;
 
   /**
    * Bảng mã sinh dãy số đón tiếp

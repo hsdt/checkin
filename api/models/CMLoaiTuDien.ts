@@ -1,19 +1,27 @@
 import { prop, Typegoose } from '@hasezoey/typegoose';
 
 class CMLoaiTuDien extends Typegoose {
-  @prop()
+  @prop({
+    required: true,
+    unique: true,
+    uppercase: true,
+  })
   maLoai!: string;
 
-  @prop()
+  @prop({
+    required: true,
+  })
   tenLoai!: string;
 
-  @prop()
+  @prop({
+    default: '',
+  })
   ghiChu?: string;
 
-  @prop()
-  uuTien!: number;
-
-  @prop()
+  @prop({
+    required: true,
+    default: true,
+  })
   active!: boolean;
 }
 

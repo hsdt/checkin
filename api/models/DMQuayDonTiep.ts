@@ -1,4 +1,5 @@
-import { prop, Typegoose } from '@hasezoey/typegoose';
+import { prop, Typegoose, Ref } from '@hasezoey/typegoose';
+import { CMTuDien } from './CMTuDien';
 
 class DMQuayDonTiep extends Typegoose {
   @prop({
@@ -19,8 +20,9 @@ class DMQuayDonTiep extends Typegoose {
 
   @prop({
     required: true,
+    ref: CMTuDien,
   })
-  idKhuVuc?: string;
+  khuVuc?: Ref<CMTuDien>;
 
   @prop({
     default: 0,
