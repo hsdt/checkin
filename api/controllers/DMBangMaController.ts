@@ -42,7 +42,7 @@ export class DMBangMaController {
     @QueryParam('domain') domain,
   ) {
     const vResult = await this.svBangMa.getNextSeq(ma, domain);
-    return { msg: vResult, ma, domain };
+    return { ...vResult, ma, domain };
   }
 
   @Put('/:ma/inactive')
