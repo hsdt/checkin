@@ -10,7 +10,8 @@
   "db": {
     "connection": "mongodb-memory",
     "dbName": "dbcheckin",
-    "dataSource": [{
+    "dataSource": [
+      {
         "name": "mongodb",
         "uri": "mongodb://127.0.0.1:27071/dbcheckin",
         "active": true

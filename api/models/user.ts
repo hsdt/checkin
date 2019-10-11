@@ -16,7 +16,7 @@ import * as jwt from 'jsonwebtoken';
   }
 })
 /**
- * Define user class
+ * Model definition
  */
 class User extends Typegoose {
   @prop() username?: string;
