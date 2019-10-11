@@ -49,9 +49,18 @@ const client = Object.assign({}, config, {
         getCustomTransformers: () => ({ before: [statements()] }),
       },
     }, {
+      test: /\.(ttf|eot|woff|woff2|svg)$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]',
+        },
+      },
+    }, {
       test: /\.css$/,
       use: [MiniCssExtractPlugin.loader, 'css-loader'],
-    }],
+    },
+  ],
   },
 });
 
