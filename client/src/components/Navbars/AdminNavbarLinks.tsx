@@ -20,7 +20,7 @@ class AdminNavbarLinks extends Component {
               <p className='hidden-lg hidden-md'>Dashboard</p>
             </Nav.Link>
           </Nav.Item>
-          <NavDropdown
+          {/* <NavDropdown
             title={notification}
             id='basic-nav-dropdown'
           >
@@ -29,7 +29,7 @@ class AdminNavbarLinks extends Component {
             <NavDropdown.Item>Notification 3</NavDropdown.Item>
             <NavDropdown.Item>Notification 4</NavDropdown.Item>
             <NavDropdown.Item>Another notifications</NavDropdown.Item>
-          </NavDropdown>
+          </NavDropdown> */}
           <Nav.Item>
             <Nav.Link href='#' >
               <i className='fa fa-search' />
@@ -37,7 +37,7 @@ class AdminNavbarLinks extends Component {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        <Nav className={'justify-content-end'}>
+        {/* <Nav className={'justify-content-end'}>
           <Nav.Item >
             <Nav.Link href='/dashboard' >Account</Nav.Link>
           </Nav.Item>
@@ -56,7 +56,7 @@ class AdminNavbarLinks extends Component {
           <Nav.Item >
             <Nav.Link href='/dashboard' >Log out</Nav.Link>
           </Nav.Item>
-        </Nav>
+        </Nav> */}
       </div>
     );
   }

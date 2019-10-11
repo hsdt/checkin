@@ -41,7 +41,7 @@ class Sidebar extends Component<any, any> {
           )}
         <div className='logo'>
           <a
-            href='https://www.creative-tim.com?ref=lbd-sidebar'
+            href='https://hosodientu.vn/products/checkin'
             className='simple-text logo-mini'
           >
             <div className='logo-img'>
@@ -49,10 +49,10 @@ class Sidebar extends Component<any, any> {
             </div>
           </a>
           <a
-            href='https://www.creative-tim.com?ref=lbd-sidebar'
+            href='https://hosodientu.vn/products/checkin'
             className='simple-text logo-normal'
           >
-            Creative Tim
+            QMS Checkin
           </a>
         </div>
         <div className='sidebar-wrapper'>

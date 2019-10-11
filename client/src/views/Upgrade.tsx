@@ -11,7 +11,7 @@ class Upgrade extends Component {
       <div className='content'>
         <Container fluid={true}>
           <Row>
-            <Col md={8}>
+            <Col md={{span: 8, offset: 2}}>
               <Card
                 hCenter
                 title='Light Bootstrap Dashboard PRO React'
