@@ -33,7 +33,7 @@
       "ext": "ejs",
       "engine": "ejs",
       "renderer": "renderFile",
-      "path": "views"
+      "path": "client/views"
     }
   }
 }
