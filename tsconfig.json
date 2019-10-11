@@ -9,12 +9,17 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "target": "es6",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "jsx": "react"
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "docs",
+    "dist",
+    "test"
   ]
 }

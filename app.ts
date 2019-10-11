@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 
 import { UserService, User, TodoService } from './api';
 import { GetDbConnection, AppRoutes } from './extensions';
+import pkg from './package.json';
 
 async function bootstrap() {
   const app = await KitesFactory
@@ -13,6 +14,7 @@ async function bootstrap() {
         TodoService,
         UserService,
       ],
+      version: pkg.version,
     })
     .use(AppRoutes)
     .use(GetDbConnection)
