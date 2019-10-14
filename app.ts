@@ -32,6 +32,7 @@ async function bootstrap() {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useFindAndModify: false,
+        useCreateIndex: true,
       });
       kites.logger.info('Mongodb connect ok: ' + uri);
 

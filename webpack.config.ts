@@ -49,7 +49,7 @@ const client = Object.assign({}, config, {
         getCustomTransformers: () => ({ before: [statements()] }),
       },
     }, {
-      test: /\.(ttf|eot|woff|woff2|svg)$/,
+      test: /\.(ttf|eot|woff|woff2|svg|png)$/,
       use: {
         loader: 'file-loader',
         options: {
@@ -60,7 +60,7 @@ const client = Object.assign({}, config, {
       test: /\.css$/,
       use: [MiniCssExtractPlugin.loader, 'css-loader'],
     },
-  ],
+    ],
   },
 });
 

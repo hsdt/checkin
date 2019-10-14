@@ -51,8 +51,7 @@ class AdminLayout extends Component<any, any> {
       title: <span data-notify='icon' className='pe-7s-gift' />,
       message: (
         <div>
-          Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for
-          every web developer.
+          Bạn đã đăng nhập <b>Hệ thống xếp hàng, đặt chỗ từ xa</b> - sử dụng Smart QMS.
         </div>
       ),
       level,
@@ -161,8 +160,8 @@ class AdminLayout extends Component<any, any> {
       <div className='wrapper'>
         <NotificationSystem ref='notificationSystem' style={style} />
         <Sidebar {...this.props} routes={routes} image={this.state.image}
-        color={this.state.color}
-        hasImage={this.state.hasImage}/>
+          color={this.state.color}
+          hasImage={this.state.hasImage} />
         <div id='main-panel' className='main-panel' ref='mainPanel'>
           <AdminNavbar
             {...this.props}

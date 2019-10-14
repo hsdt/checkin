@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 import AdminNavbarLinks from '../Navbars/AdminNavbarLinks';
 
-// import logo from "assets/img/reactlogo.png";
-const logo = 'abc.png';
+// import logo from 'assets/img/reactlogo.png';
+const logo = 'https://avatars2.githubusercontent.com/u/3768250?v=4';
 
 class Sidebar extends Component<any, any> {
   constructor(props) {
@@ -34,9 +34,9 @@ class Sidebar extends Component<any, any> {
         data-color={this.props.color}
         data-image={this.props.image}
       >
-          {this.props.hasImage ? (
-            <div className='sidebar-background' style={sidebarBackground} />
-          ) : (
+        {this.props.hasImage ? (
+          <div className='sidebar-background' style={sidebarBackground} />
+        ) : (
             null
           )}
         <div className='logo'>
