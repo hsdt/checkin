@@ -3,12 +3,12 @@
 // // // For notifications
 // //
 //
-let defaultWidth =
+const defaultWidth =
   window.screen.width > 768
     ? (window.screen.width * 1) / 3
     : window.screen.width;
 
-let style = {
+const style = {
   Wrapper: {},
   Containers: {
     DefaultStyle: {
@@ -475,17 +475,17 @@ const iconsArray = [
 // //
 //
 // Data for Pie Chart
-let dataPie = {
+const dataPie = {
   labels: ['40%', '20%', '40%'],
   series: [40, 20, 40],
 };
-let legendPie = {
+const legendPie = {
   names: ['Open', 'Bounce', 'Unsubscribe'],
   types: ['info', 'danger', 'warning'],
 };
 
 // Data for Line Chart
-let dataSales = {
+const dataSales = {
   labels: [
     '9:00AM',
     '12:00AM',
@@ -502,7 +502,7 @@ let dataSales = {
     [23, 113, 67, 108, 190, 239, 307, 308],
   ],
 };
-let optionsSales = {
+const optionsSales = {
   low: 0,
   high: 800,
   showArea: false,
@@ -518,7 +518,7 @@ let optionsSales = {
     right: 50,
   },
 };
-let responsiveSales = [
+const responsiveSales = [
   [
     'screen and (max-width: 640px)',
     {
@@ -530,13 +530,13 @@ let responsiveSales = [
     },
   ],
 ];
-let legendSales = {
+const legendSales = {
   names: ['Open', 'Click', 'Click Second Time'],
   types: ['info', 'danger', 'warning'],
 };
 
 // Data for Bar Chart
-let dataBar = {
+const dataBar = {
   labels: [
     'Jan',
     'Feb',
@@ -556,14 +556,14 @@ let dataBar = {
     [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695],
   ],
 };
-let optionsBar = {
+const optionsBar = {
   seriesBarDistance: 10,
   axisX: {
     showGrid: false,
   },
   height: '245px',
 };
-let responsiveBar = [
+const responsiveBar = [
   [
     'screen and (max-width: 640px)',
     {
@@ -576,7 +576,7 @@ let responsiveBar = [
     },
   ],
 ];
-let legendBar = {
+const legendBar = {
   names: ['Tesla Model S', 'BMW 5 Series'],
   types: ['info', 'danger'],
 };
