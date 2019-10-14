@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@kites/common';
-import { UserModel, User } from '../models';
+import { UserModel, User } from '../../models';
 import { KITES_INSTANCE, KitesInstance } from '@kites/core';
 
 @Injectable()

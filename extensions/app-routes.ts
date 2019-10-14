@@ -39,6 +39,7 @@ function AppRoutes(kites: KitesInstance) {
   kites.on('express:config:static', async (app: Express) => {
     const e = await import('express');
     app.use(e.static('build/client'));
+    app.get('/*', (req, res) => res.view('index'));
   });
 }
 
