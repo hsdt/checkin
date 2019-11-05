@@ -14,7 +14,7 @@ import { UserCard } from '../components/cards/UserCard';
 import Button from '../components/buttons/CustomButton';
 
 // import avatar from 'assets/img/faces/face-3.jpg';
-const avatar = 'test';
+const avatar = 'https://avatars2.githubusercontent.com/u/3768250?v=4';
 
 class UserProfile extends Component {
   render() {
@@ -129,7 +129,7 @@ class UserProfile extends Component {
             </Col>
             <Col md={4}>
               <UserCard
-                bgImage='https://avatars2.githubusercontent.com/u/3768250?v=4'
+                bgImage='https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400'
                 avatar={avatar}
                 name='Mike Andrew'
                 userName='michael24'
