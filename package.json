@@ -45,7 +45,7 @@
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "mongodb-memory-server": "^5.2.5",
     "nodemon": "^1.19.3",
     "nodemon-webpack-plugin": "^4.1.1",
